@@ -1,10 +1,10 @@
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 class DataLoader:
 
-    def __init__(self,path, augment=True, batch_size=32, target_size=(224, 224)):
+    def __init__(self, path, augment=True, batch_size=32, target_size=(224, 224)):
         assert path.endswith("/"), "Le chemin doit se terminer par '/'"
         
-        # Initialiser les générateurs
         DA_gen = ImageDataGenerator(
             featurewise_center=False,
             rotation_range=5,
@@ -19,7 +19,6 @@ class DataLoader:
         )
         no_DA_gen = ImageDataGenerator()
 
-        # Chargement des ensembles
         self.train_set_DA = DA_gen.flow_from_directory(
             path + "train/",
             target_size=(224, 224),
@@ -45,20 +44,13 @@ class DataLoader:
             class_mode='categorical',
             shuffle=False
         )
+
+        # 🔥 AJOUT OBLIGATOIRE !
+        self.class_names = list(self.test_set.class_indices.keys())
     
     def get_datasets(self):
-        """
-        Retourne les ensembles d'entraînement, de validation et de test.
-
-        Retourne:
-        - train_set_DA: Ensemble d'entraînement avec augmentation
-        - train_set_NO_DA: Ensemble d'entraînement sans augmentation
-        - val_set: Ensemble de validation
-        - test_set: Ensemble de test
-        """
         return {
             "train_with_augmentation": self.train_set_DA,
             "train_without_augmentation": self.train_set_NO_DA,
-            
             "test": self.test_set
         }
