@@ -52,7 +52,7 @@ def train_and_evaluate(model_class, model_name):
     # ---- PHASE 1 ----
     model.fit(
         train_with_aug,
-        epochs=25,
+        epochs=45,
         validation_data=test_set,
         callbacks=callbacks,
         verbose=2
