@@ -1,11 +1,14 @@
 import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
-from DataLoaders import DataLoader
+sys.path.append(os.path.join(os.path.dirname(os.getcwd()), 'src'))
+sys.path.append(os.path.join(os.path.dirname(os.getcwd()), 'data'))
 
-from Model import ResNet50_Model
-from eficcient import EfficientNetB0_Model
-from Mobile import MobileNetV2_Model
+from data import DataLoaders
+
+from models import resnet_model
+from models import efficient_model
+from models import mobilenet_model
 
 import tensorflow as tf
 import tensorflow.keras.backend as K
@@ -17,7 +20,7 @@ print(f"Keras version: {tf.keras.__version__}")
 # CHARGEMENT DES DONNÉES
 # =======================
 
-data_loader = DataLoader(path="C:/Users/nessa/Downloads/sipakmed_new6/")
+data_loader = DataLoaders(path="C:/Users/nessa/Downloads/sipakmed_new6/")
 datasets = data_loader.get_datasets()
 
 train_with_aug = datasets["train_with_augmentation"]
@@ -123,15 +126,15 @@ def train_and_evaluate(model_class, model_name):
 
 results = []
 
-results.append(train_and_evaluate(ResNet50_Model, "ResNet50"))
+results.append(train_and_evaluate(resnet_model, "ResNet50"))
 K.clear_session()
 gc.collect()
 
-results.append(train_and_evaluate(EfficientNetB0_Model, "EfficientNetB0"))
+results.append(train_and_evaluate(efficient_model, "EfficientNetB0"))
 K.clear_session()
 gc.collect()
 
-results.append(train_and_evaluate(MobileNetV2_Model, "MobileNetV2"))
+results.append(train_and_evaluate(mobilenet_model, "MobileNetV2"))
 K.clear_session()
 gc.collect()
 
