@@ -2,9 +2,13 @@ import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
 sys.path.append(os.path.join(os.path.dirname(os.getcwd()), 'src'))
-sys.path.append(os.path.join(os.path.dirname(os.getcwd()), 'data'))
 
-from data import DataLoaders
+data_path = os.path.join(os.path.dirname(os.getcwd()), 'data')
+sys.path.append(data_path)
+
+# 4. Importer DataLoaders depuis dataloaders.py
+from DataLoaders import DataLoader
+
 
 from models import resnet_model
 from models import efficient_model
