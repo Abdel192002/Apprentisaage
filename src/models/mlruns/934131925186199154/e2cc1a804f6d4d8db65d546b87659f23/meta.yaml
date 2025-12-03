@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nessa/OneDrive/Bureau/tp/Apprentisaage-1/src/models/mlruns/934131925186199154/e2cc1a804f6d4d8db65d546b87659f23/artifacts
+end_time: 1764771381618
+entry_point_name: ''
+experiment_id: '934131925186199154'
+lifecycle_stage: active
+run_id: e2cc1a804f6d4d8db65d546b87659f23
+run_name: efficientnet_exp_005
+run_uuid: e2cc1a804f6d4d8db65d546b87659f23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764771256682
+status: 3
+tags: []
+user_id: nessa

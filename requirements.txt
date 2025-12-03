@@ -1,6 +1,33 @@
-mlflow>=2.0
-tensorflow>=2.10
-scikit-learn>=1.0
-pandas>=1.5
-numpy>=1.23
-joblib>=1.2
+torch
+torchvision
+tensorflow
+
+#Data Science
+numpy
+pandas
+scikit-learn
+
+#Explainability
+shap
+lime
+
+#MLOps Tools
+mlflow
+dvc
+
+#Visualization
+matplotlib
+seaborn
+
+#Utilities
+tqdm
+requests
+
+#Jupyter Notebooks
+jupyter
+ipywidgets
+
+#idk
+streamlit
+pillow
+joblib

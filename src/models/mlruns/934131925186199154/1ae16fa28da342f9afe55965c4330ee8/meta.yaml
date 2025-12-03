@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nessa/OneDrive/Bureau/tp/Apprentisaage-1/src/models/mlruns/934131925186199154/1ae16fa28da342f9afe55965c4330ee8/artifacts
+end_time: 1764770969758
+entry_point_name: ''
+experiment_id: '934131925186199154'
+lifecycle_stage: active
+run_id: 1ae16fa28da342f9afe55965c4330ee8
+run_name: resnet50_exp_002
+run_uuid: 1ae16fa28da342f9afe55965c4330ee8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764770829401
+status: 3
+tags: []
+user_id: nessa

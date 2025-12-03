@@ -1,0 +1,22 @@
+{
+    "model_name": "efficientnet",
+    "run_name": "efficientnet_exp_006",
+    "parameters": {
+        "learning_rate": 0.001,
+        "dense_units": 256,
+        "dropout_rate": 0.4,
+        "batch_size": 16,
+        "epochs": 20
+    },
+    "metrics": {
+        "accuracy": 0.35,
+        "precision": 0.12249999999999998,
+        "recall": 0.35,
+        "f1": 0.18148148148148147
+    },
+    "val_accuracy": 0.3499999940395355,
+    "val_loss": 1.1201555728912354,
+    "timestamp": "2025-12-03T15:18:10.513933",
+    "git_hash": "N/A",
+    "dvc_hash": "N/A"
+}

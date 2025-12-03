@@ -1,0 +1,22 @@
+{
+    "model_name": "mobilenet",
+    "run_name": "mobilenet_exp_010",
+    "parameters": {
+        "learning_rate": 0.001,
+        "dense_units": 128,
+        "dropout_rate": 0.3,
+        "batch_size": 32,
+        "epochs": 15
+    },
+    "metrics": {
+        "accuracy": 0.4,
+        "precision": 0.2677083333333333,
+        "recall": 0.4,
+        "f1": 0.31869328493647914
+    },
+    "val_accuracy": 0.4000000059604645,
+    "val_loss": 1.1636228561401367,
+    "timestamp": "2025-12-03T15:24:24.219146",
+    "git_hash": "N/A",
+    "dvc_hash": "N/A"
+}

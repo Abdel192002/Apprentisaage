@@ -1,0 +1,22 @@
+{
+    "model_name": "resnet50",
+    "run_name": "resnet50_exp_002",
+    "parameters": {
+        "learning_rate": 0.001,
+        "dense_units": 128,
+        "dropout_rate": 0.3,
+        "batch_size": 16,
+        "epochs": 20
+    },
+    "metrics": {
+        "accuracy": 0.3,
+        "precision": 0.1984848484848485,
+        "recall": 0.3,
+        "f1": 0.20797101449275363
+    },
+    "val_accuracy": 0.30000001192092896,
+    "val_loss": 1.1239888668060303,
+    "timestamp": "2025-12-03T15:09:29.744707",
+    "git_hash": "N/A",
+    "dvc_hash": "N/A"
+}

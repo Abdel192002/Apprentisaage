@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nessa/OneDrive/Bureau/tp/Apprentisaage-1/src/models/mlruns/0/b80c2af8637b4e39ae1b5d7498124322/artifacts
+end_time: 1764767455718
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b80c2af8637b4e39ae1b5d7498124322
+run_name: Test_MobileNetV2
+run_uuid: b80c2af8637b4e39ae1b5d7498124322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764767455670
+status: 3
+tags: []
+user_id: nessa
