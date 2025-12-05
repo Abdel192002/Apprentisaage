@@ -1,0 +1,55 @@
+{
+    "project": "SipakMed Classification MLOps",
+    "date": "2025-12-05T05:11:42.007589",
+    "dataset": {
+        "name": "sipakmed_new6",
+        "path": "C:/Users/nessa/Downloads/sipakmed_new6/",
+        "classes": [
+            "Abnormal",
+            "Benign",
+            "Normal"
+        ],
+        "num_classes": 3,
+        "train_samples": 551,
+        "test_samples": 177
+    },
+    "experiments_summary": {
+        "total_experiments": 20,
+        "resnet_experiments": 10,
+        "efficientnet_experiments": 5,
+        "mobilenet_experiments": 5
+    },
+    "best_model": {
+        "run_name": "mobilenet_exp_20",
+        "config": {
+            "learning_rate": 0.0005,
+            "epochs": 7
+        },
+        "metrics": {
+            "accuracy": 0.8192090395480226,
+            "precision": 0.8591121418411699,
+            "recall": 0.8192090395480226,
+            "f1_score": 0.823996645904058,
+            "auc_roc": 0.9577650594682817,
+            "test_samples": 177,
+            "precision_Abnormal": 0.9682539682539683,
+            "recall_Abnormal": 0.7625,
+            "f1_Abnormal": 0.8531468531468531,
+            "support_Abnormal": 80,
+            "precision_Benign": 0.6582278481012658,
+            "recall_Benign": 0.9454545454545454,
+            "f1_Benign": 0.7761194029850746,
+            "support_Benign": 55,
+            "precision_Normal": 0.9142857142857143,
+            "recall_Normal": 0.7619047619047619,
+            "f1_Normal": 0.8311688311688312,
+            "support_Normal": 42,
+            "test_loss": 0.46343520283699036,
+            "test_accuracy": 0.8192090392112732
+        }
+    },
+    "mlflow_info": {
+        "experiment_name": "SipakMed_Classification_20251205_0146",
+        "tracking_uri": "file:./mlruns"
+    }
+}
