@@ -1,0 +1,170 @@
+{
+    "project": "SipakMed Classification MLOps",
+    "date": "2025-12-05T17:33:46.734084",
+    "dataset": {
+        "name": "sipakmed_new6",
+        "path": "C:/Users/nessa/Downloads/sipakmed_new6/",
+        "classes": [
+            "Abnormal",
+            "Benign",
+            "Normal"
+        ],
+        "num_classes": 3,
+        "train_samples": 551,
+        "test_samples": 177
+    },
+    "gridsearch_summary": {
+        "total_experiments": 15,
+        "resnet_experiments": 5,
+        "efficientnet_experiments": 5,
+        "mobilenet_experiments": 5,
+        "best_accuracy": 0.8192090395480226,
+        "best_f1_score": 0.8195042570893122,
+        "best_model": "mobilenet_exp_15"
+    },
+    "best_model": {
+        "run_name": "mobilenet_exp_15",
+        "config": {
+            "learning_rate": 0.0005,
+            "dropout_rate": 0.3,
+            "l2_reg": 0.01,
+            "dense_units": 128,
+            "epochs": 9,
+            "freeze_backbone": true,
+            "model_type": "mobilenet"
+        },
+        "metrics": {
+            "accuracy": 0.8192090395480226,
+            "precision": 0.8517370453267726,
+            "recall": 0.8192090395480226,
+            "f1_score": 0.8195042570893122,
+            "auc_roc": 0.9597020059487201,
+            "test_samples": 177,
+            "precision_Abnormal": 0.9824561403508771,
+            "recall_Abnormal": 0.7,
+            "f1_Abnormal": 0.8175182481751825,
+            "support_Abnormal": 80,
+            "precision_Benign": 0.704225352112676,
+            "recall_Benign": 0.9090909090909091,
+            "f1_Benign": 0.7936507936507936,
+            "support_Benign": 55,
+            "precision_Normal": 0.7959183673469388,
+            "recall_Normal": 0.9285714285714286,
+            "f1_Normal": 0.8571428571428571,
+            "support_Normal": 42,
+            "test_loss": 2.0057849884033203,
+            "test_accuracy": 0.8192090392112732
+        }
+    },
+    "top_3_models": [
+        {
+            "rank": 1,
+            "run_name": "mobilenet_exp_15",
+            "config": {
+                "learning_rate": 0.0005,
+                "dropout_rate": 0.3,
+                "l2_reg": 0.01,
+                "dense_units": 128,
+                "epochs": 9,
+                "freeze_backbone": true,
+                "model_type": "mobilenet"
+            },
+            "metrics": {
+                "accuracy": 0.8192090395480226,
+                "precision": 0.8517370453267726,
+                "recall": 0.8192090395480226,
+                "f1_score": 0.8195042570893122,
+                "auc_roc": 0.9597020059487201,
+                "test_samples": 177,
+                "precision_Abnormal": 0.9824561403508771,
+                "recall_Abnormal": 0.7,
+                "f1_Abnormal": 0.8175182481751825,
+                "support_Abnormal": 80,
+                "precision_Benign": 0.704225352112676,
+                "recall_Benign": 0.9090909090909091,
+                "f1_Benign": 0.7936507936507936,
+                "support_Benign": 55,
+                "precision_Normal": 0.7959183673469388,
+                "recall_Normal": 0.9285714285714286,
+                "f1_Normal": 0.8571428571428571,
+                "support_Normal": 42,
+                "test_loss": 2.0057849884033203,
+                "test_accuracy": 0.8192090392112732
+            }
+        },
+        {
+            "rank": 2,
+            "run_name": "mobilenet_exp_11",
+            "config": {
+                "learning_rate": 0.001,
+                "dropout_rate": 0.3,
+                "l2_reg": 0.01,
+                "dense_units": 128,
+                "epochs": 5,
+                "freeze_backbone": true,
+                "model_type": "mobilenet"
+            },
+            "metrics": {
+                "accuracy": 0.8022598870056498,
+                "precision": 0.8547425195490086,
+                "recall": 0.8022598870056498,
+                "f1_score": 0.8085854800691974,
+                "auc_roc": 0.9611029579405674,
+                "test_samples": 177,
+                "precision_Abnormal": 0.9672131147540983,
+                "recall_Abnormal": 0.7375,
+                "f1_Abnormal": 0.8368794326241135,
+                "support_Abnormal": 80,
+                "precision_Benign": 0.6265060240963856,
+                "recall_Benign": 0.9454545454545454,
+                "f1_Benign": 0.7536231884057971,
+                "support_Benign": 55,
+                "precision_Normal": 0.9393939393939394,
+                "recall_Normal": 0.7380952380952381,
+                "f1_Normal": 0.8266666666666667,
+                "support_Normal": 42,
+                "test_loss": 1.9069550037384033,
+                "test_accuracy": 0.8022598624229431
+            }
+        },
+        {
+            "rank": 3,
+            "run_name": "mobilenet_exp_12",
+            "config": {
+                "learning_rate": 0.0005,
+                "dropout_rate": 0.5,
+                "l2_reg": 0.01,
+                "dense_units": 256,
+                "epochs": 8,
+                "freeze_backbone": true,
+                "model_type": "mobilenet"
+            },
+            "metrics": {
+                "accuracy": 0.7853107344632768,
+                "precision": 0.8221524238473392,
+                "recall": 0.7853107344632768,
+                "f1_score": 0.7904172318420849,
+                "auc_roc": 0.9554071434505003,
+                "test_samples": 177,
+                "precision_Abnormal": 0.8939393939393939,
+                "recall_Abnormal": 0.7375,
+                "f1_Abnormal": 0.8082191780821918,
+                "support_Abnormal": 80,
+                "precision_Benign": 0.6282051282051282,
+                "recall_Benign": 0.8909090909090909,
+                "f1_Benign": 0.7368421052631579,
+                "support_Benign": 55,
+                "precision_Normal": 0.9393939393939394,
+                "recall_Normal": 0.7380952380952381,
+                "f1_Normal": 0.8266666666666667,
+                "support_Normal": 42,
+                "test_loss": 3.1985907554626465,
+                "test_accuracy": 0.7853107452392578
+            }
+        }
+    ],
+    "mlflow_info": {
+        "experiment_name": "SipakMed_Classification_20251205_1502",
+        "tracking_uri": "file:./mlruns"
+    }
+}
