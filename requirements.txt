@@ -1,33 +1,46 @@
-torch
-torchvision
-tensorflow
+# ============================================================================
+# VERSIONS GARANTIES SANS CONFLITS
+# ============================================================================
 
-#Data Science
-numpy
-pandas
-scikit-learn
+# BASE
+numpy==1.24.3
+protobuf==3.20.3
 
-#Explainability
-shap
-lime
+# TENSORFLOW COMPLET
+tensorflow==2.13.0
+keras==2.13.1
 
-#MLOps Tools
-mlflow
-dvc
+# PYTORCH
+torch==2.0.1
+torchvision==0.15.2
 
-#Visualization
-matplotlib
-seaborn
+# DATA SCIENCE
+pandas==1.5.3
+scikit-learn==1.2.2
+matplotlib==3.7.1
+seaborn==0.12.2
 
-#Utilities
-tqdm
-requests
+# MLOPS
+mlflow==2.8.0  # Version plus récente mais compatible
+dvc==2.58.2
 
-#Jupyter Notebooks
-jupyter
-ipywidgets
+# EXPLAINABILITY
+shap==0.41.0
+lime==0.2.0.1
 
-#idk
-streamlit
-pillow
-joblib
+# UTILITIES
+opencv-python==4.7.0.72
+scipy==1.10.1
+tqdm==4.65.0
+requests==2.31.0
+joblib==1.2.0
+pillow==9.5.0
+
+# JUPYTER
+jupyter==1.0.0
+ipywidgets==8.0.7
+ipykernel==6.22.0
+ipython==8.12.0
+
+# STREAMLIT
+streamlit==1.22.0
