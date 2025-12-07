@@ -1,0 +1,47 @@
+{
+  "true_class": "Abnormal",
+  "true_class_index": 0,
+  "image_shape": [
+    224,
+    224,
+    3
+  ],
+  "predictions": {
+    "ResNet": {
+      "predicted_class": "Abnormal",
+      "predicted_class_index": 0,
+      "confidence": 0.8786723017692566,
+      "confidence_percentage": "87.9%",
+      "is_correct": true,
+      "all_probabilities": [
+        0.8786723017692566,
+        0.06900402903556824,
+        0.05232366919517517
+      ]
+    },
+    "EfficientNet": {
+      "predicted_class": "Normal",
+      "predicted_class_index": 2,
+      "confidence": 0.393661767244339,
+      "confidence_percentage": "39.4%",
+      "is_correct": false,
+      "all_probabilities": [
+        0.38436704874038696,
+        0.22197115421295166,
+        0.393661767244339
+      ]
+    },
+    "MobileNet": {
+      "predicted_class": "Benign",
+      "predicted_class_index": 1,
+      "confidence": 0.4440304934978485,
+      "confidence_percentage": "44.4%",
+      "is_correct": false,
+      "all_probabilities": [
+        0.22208644449710846,
+        0.4440304934978485,
+        0.33388304710388184
+      ]
+    }
+  }
+}
