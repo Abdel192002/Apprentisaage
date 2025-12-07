@@ -1,0 +1,16 @@
+{
+  "feature1": {
+    "type": "float",
+    "min": 0,
+    "max": 100,
+    "default": 50,
+    "description": "Description de la feature 1"
+  },
+  "feature2": {
+    "type": "int",
+    "min": 1,
+    "max": 10,
+    "default": 5,
+    "description": "Description de la feature 2"
+  }
+}
