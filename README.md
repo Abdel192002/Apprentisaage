@@ -14,7 +14,7 @@ This project's goal is to build a complete **MLOps pipeline** for a classificati
 Create virtual environment : 
 - <code>$ python -m venv venv</code>
 - <code>$ source venv/bin/actiate</code>
-Install required libraries :
+<br>Install required libraries :
 - <code>$ pip install -r requirements.txt</code>
 Pull data from DVC :
 - <code>$ dvc pull</code>
@@ -22,7 +22,7 @@ Go to the <code>notebooks</code> folder :
 1. Look through <code>01_exploration.ipynb</code> file.
 2. Execute all cells in <code>03_experiments.ipynb</code> file.
 3. In a terminal open in this root folder, type <code>./run_mlflow.bat</code> to open MLFlow UI
-4. In UI, look through the 3 first experiments.
+4. In the UI, look through the first 3 experiments with **ResNet50**, **EfficientNet** and **MobileNet** in their name.
 5. In <code>03_explainability.ipynb</code> file, look through the cells.
 6. In a terminal, run the command <code>streamlit run streamlit_sipkamed.py</code>
 
