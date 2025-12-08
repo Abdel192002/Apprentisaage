@@ -18,6 +18,13 @@ Install required libraries :
 - <code>$ pip install -r requirements.txt</code>
 Pull data from DVC :
 - <code>$ dvc pull</code>
+Go to the <code>notebooks</code> folder :
+1. Look through <code>01_exploration.ipynb</code> file.
+2. Execute all cells in <code>03_experiments.ipynb</code> file.
+3. In a terminal open in this root folder, type <code>./run_mlflow.bat</code> to open MLFlow UI
+4. In UI, look through the 3 first experiments.
+5. In <code>03_explainability.ipynb</code> file, look through the cells.
+6. In a terminal, run the command <code>streamlit run streamlit_sipkamed.py</code>
 
 ## Team
 * Amine ELHANA
