@@ -1,0 +1,9 @@
+{
+  "loaded_models": [
+    "ResNet",
+    "EfficientNet",
+    "MobileNet"
+  ],
+  "timestamp": "2025-12-08T00:47:44.702009",
+  "models_dir": "c:\\Users\\sarah\\Documents\\M Info\\M2 SID\\AASD\\Apprentisaage\\src\\models"
+}
